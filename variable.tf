@@ -1,3 +1,3 @@
 variable "s3" {
-  description = "value"
+  description = "values"
 }
