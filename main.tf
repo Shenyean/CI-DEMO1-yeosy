@@ -29,7 +29,7 @@ resource "aws_s3_bucket" "test_bucket" {
 }
 
 output "bucket_name" {
-  description = "Name of the created S3 bucket"
+  description = "Name of the created S3 bucket1"
   value       = aws_s3_bucket.test_bucket.bucket
 }
 
