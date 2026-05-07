@@ -1,4 +1,5 @@
 terraform {
+  required_version = ">= 1.0.0"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -22,14 +23,14 @@ resource "aws_s3_bucket" "test_bucket" {
   bucket = "yeosy1234-github-actions-test-bucket"
 
   tags = {
-    Name        = "yeosy-github-actions-test-bucket"
+    Name        = "yeosy-github-actions-test-bucket2"
     Environment = "test"
     ManagedBy   = "terraform"
   }
 }
 
 output "bucket_name" {
-  description = "Name of the created S3 bucket"
+  description = "Name of the created S3 bucket1"
   value       = aws_s3_bucket.test_bucket.bucket
 }
 
