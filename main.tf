@@ -23,7 +23,7 @@ resource "aws_s3_bucket" "test_bucket" {
   bucket = "yeosy1234-github-actions-test-bucket"
 
   tags = {
-    Name        = "yeosy-github-actions-test-bucket"
+    Name        = "yeosy-github-actions-test-bucket2"
     Environment = "test"
     ManagedBy   = "terraform"
   }
